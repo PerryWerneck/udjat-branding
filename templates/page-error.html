@@ -4,15 +4,15 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="robots" content="noindex, follow" />
-	<title>Request failed with error ${error-code}</title>
+	<title>Request failed with error ${status-code}</title>
 	<link rel="stylesheet" type="text/css" href="${css-path}" />
 </head>
 <body class="error-body">
 <div class='dialog-box'>
 	<img src="/icon/computer-fail-symbolic">
-	<h1>HTTP Error ${error-code}</h1>
-	<p>${message}</p>
-	<p><small>${body}</small></p>
+	<h1>HTTP Error %{status-code}</h1>
+	<p>%{status-message}</p>
+	<p><small>%{status-body}</small></p>
 </div>
 </body>
 </html>
