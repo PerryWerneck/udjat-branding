@@ -8,7 +8,6 @@ html {
 
 body {
 	font-family: roboto,lato,sans-serif;
-
 }
 
 /* Login/Error pages */
@@ -16,7 +15,7 @@ body {
 .login-body, .error-body {
 	background-color: #060416;
 	margin: auto;
-	background-image: url("/udjat/images/background.svg");
+	background-image: url("/theme/images/background.svg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;	
@@ -40,7 +39,7 @@ body {
 }
 
 .login-body input[type="text"], .login-body input[type="password"] {
-	width: 100%
+	width: 100%;
 	outline: none;
 	background-color: #fff;
 	border-radius: 4px;
@@ -83,7 +82,7 @@ body {
 	height: 80px;
 }
 
-.error-body h1, {
+.error-body h1 {
 	margin: 0px 3px 6px 3px;
 	text-align: center;
 }
