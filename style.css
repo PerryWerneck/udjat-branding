@@ -60,6 +60,7 @@ body {
 }
 
 header {
+	width: 100%;
 	background-color: #26205A;
 	display: flex;
 	align-items: center;
@@ -78,6 +79,18 @@ header h1 {
 .logo-icon {
 	height: 100%;
 	margin-right: 6px;
+}
+
+.userbox {
+	width: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: end;
+	padding-right: 6px;
+}
+
+.userbox > img {
+	height: 1.4em;
 }
 
 main, .login-body, .error-body {
