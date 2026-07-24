@@ -1,5 +1,51 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 
+/*
+
+The Palette: "Deep Space Neon"
+
+Role				Color Name			Hex Code	Visual Preview / Usage
+Background			Deep Cosmos			#060416		Main background for the site
+Card / Surface		Obsidian Violet		#120E2E		Hero cards, navbar, modal backgrounds
+Primary Text		Starlight White		#F3F2F8		Main headings and body text
+Secondary Text		Muted Nebula		#948EB5		Subtitles, disabled states, borders
+Primary Accent		Electric Cyan		#00F0FF		Primary CTA buttons, key metrics, active links
+Secondary Accent	Neon Magenta		#E026FF		Hover states, badges, secondary highlights
+
+For topbar::after
+
+Option 1: 
+	Midnight Indigo (Recommended),
+	#1C1744,
+	"Clearly lighter than #120E2E, keeps a rich purple hue"
+
+Option 2: 
+	Deep Slate Violet,
+	#26205A
+	Medium tone for high separation and bold top banners
+
+
+*/
+
+:root {
+  /* Backgrounds */
+  --bg-main: #060416;
+  --bg-surface: #120E2E;
+  --bg-surface-hover: #1C1744;
+
+  /* Typography */
+  --text-primary: #F3F2F8;
+  --text-secondary: #948EB5;
+
+  /* Accents */
+  --accent-cyan: #00F0FF;
+  --accent-magenta: #E026FF;
+
+  /* Borders & Glassmorphism */
+  --border-subtle: rgba(243, 242, 248, 0.08);
+  --glow-cyan: rgba(0, 240, 255, 0.25);
+}
+
 /* Standard layout */
 html {
 	min-height:100%;
@@ -8,12 +54,33 @@ html {
 
 body {
 	font-family: roboto,lato,sans-serif;
+	background-color: #060416;
+	color: #F3F2F8;
+	margin: 0;
 }
 
-/* Login/Error pages */
+header {
+	background-color: #26205A;
+	display: flex;
+	align-items: center;
+	padding: 3px;
+	height: 1.5em;
+}
 
-.login-body, .error-body {
-	background-color: #060416;
+header h1 {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	margin: 0;
+	padding: 0;
+}
+
+.logo-icon {
+	height: 100%;
+	margin-right: 6px;
+}
+
+main, .login-body, .error-body {
 	margin: auto;
 	background-image: url("/theme/images/background.svg");
 	background-repeat: no-repeat;
