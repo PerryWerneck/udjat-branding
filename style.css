@@ -91,6 +91,26 @@ header h1 {
 
 .userbox > img {
 	height: 1.4em;
+	margin-left: 6px;
+}
+
+.page-wrapper {
+  display: flex;
+  min-height: 100vh; /* Takes full height of browser viewport */
+}
+
+.page-wrapper > nav {
+  width: 250px;             /* Fixed width for your navbar */
+  background-color: #120E2E;
+  padding: 20px;
+}
+
+nav h1 {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	margin: 0;
+	padding: 0;
 }
 
 main, .login-body, .error-body {

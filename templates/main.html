@@ -10,21 +10,29 @@
 <body>
 	<header>
 		<img class="logo-icon" src="/theme/logo/light-inline.svg" />
-		<h1>%{HOSTNAME}</h1>
+		<h1>%{title}</h1>
 		<span class="userbox">
-			Username
-			<img class="user-icon" src="/icon/avatar-default" />
+			%{user-link}
+			<img src="%{avatar}" />
 		</span>
 	</header>
-	<!-- nav>%{navbar}</nav -->
-	<!-- The primary content unique to this specific page -->
-	<main>
-      	<!-- Static Page Summary: Gives a quick overview of the unique page content -->
-        <!-- section class="system-state" aria-label="system-state">
-		 	%{page-summary}
-        </section -->
-		%{page-contents}
-	</main>
+
+	<div class="page-wrapper">
+		<nav>
+			<h1>%{HOSTNAME}</h1>
+			%{navbar}
+		</nav>
+
+		<!-- The primary content unique to this specific page -->
+		<main>
+			<!-- Static Page Summary: Gives a quick overview of the unique page content -->
+			<!-- section class="system-state" aria-label="system-state">
+				%{page-summary}
+			</section -->
+			%{page-contents}
+		</main>
+	</div>
+
 	<!-- aside></aside -->
 	<!-- footer></footer -->
 </body>
