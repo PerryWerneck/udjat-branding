@@ -48,7 +48,6 @@ Option 2:
 
 /* Standard layout */
 html {
-	min-height:100%;
 	display:grid;
 }
 
@@ -64,8 +63,7 @@ header {
 	background-color: #26205A;
 	display: flex;
 	align-items: center;
-	padding: 3px;
-	height: 1.5em;
+	height: 32px;
 }
 
 header h1 {
@@ -90,13 +88,15 @@ header h1 {
 }
 
 .userbox > img {
-	height: 1.4em;
+	height: 26px;
 	margin-left: 6px;
+	border-radius: 50%;
+	border:#948EB5, 1px, solid;
 }
 
 .page-wrapper {
   display: flex;
-  min-height: 100vh; /* Takes full height of browser viewport */
+  min-height: calc(100vh - 32px);
 }
 
 .page-wrapper > nav {
@@ -111,6 +111,23 @@ nav h1 {
 	font-size: 1.1em;
 	margin: 0;
 	padding: 0;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+nav > ul > a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+}
+
+nav > ul > a:hover {
+  color: #ffffff;
+  padding-left: 5px; /* Slight nudge animation */
 }
 
 main, .login-body, .error-body {
