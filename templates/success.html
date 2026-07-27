@@ -7,13 +7,13 @@
 	<title>Request failed with error %{status-code}</title>
 	<link rel="stylesheet" type="text/css" href="/theme/style.css" />
 </head>
-<body class="error-body">
-<div class='dialog-box'>
-	<img src="/icon/computer-fail-symbolic">
-	<h1>HTTP Error %{status-code}</h1>
-	<p>%{status-message}</p>
-	<p><small>%{status-body}</small></p>
-</div>
+<body class="dialog-body">
+	<section class='dialog-box'>
+		<img src="/icon/computer-fail-symbolic">
+		<h1>HTTP Error %{status-code}</h1>
+		<p>%{status-message}</p>
+		<p><small>%{status-body}</small></p>
+	</section>
 </body>
 </html>
 

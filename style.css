@@ -95,14 +95,19 @@ header h1 {
 }
 
 .page-wrapper {
-  display: flex;
-  min-height: calc(100vh - 32px);
+	display: flex;
+	min-height: calc(100vh - 32px);
 }
 
 .page-wrapper > nav {
-  width: 250px;             /* Fixed width for your navbar */
-  background-color: #120E2E;
-  padding: 10px;
+	width: 250px;             /* Fixed width for your navbar */
+	background-color: #120E2E;
+	padding: 10px;
+}
+
+.page-wrapper > main {
+	width: 100%;
+	margin: 0px;
 }
 
 nav h1 {
@@ -132,7 +137,7 @@ nav > ul > a:hover {
 
 main, .login-body, .dialog-body {
 	margin: auto;
-	background-image: url("/theme/images/background.svg");
+	/* background-image: url("/theme/images/background.svg"); */
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;	
