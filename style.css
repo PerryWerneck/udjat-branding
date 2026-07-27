@@ -102,7 +102,7 @@ header h1 {
 .page-wrapper > nav {
   width: 250px;             /* Fixed width for your navbar */
   background-color: #120E2E;
-  padding: 20px;
+  padding: 10px;
 }
 
 nav h1 {
@@ -130,7 +130,7 @@ nav > ul > a:hover {
   padding-left: 5px; /* Slight nudge animation */
 }
 
-main, .login-body, .error-body {
+main, .login-body, .dialog-body {
 	margin: auto;
 	background-image: url("/theme/images/background.svg");
 	background-repeat: no-repeat;
@@ -138,21 +138,37 @@ main, .login-body, .error-body {
 	background-position: center;	
 } 
 
+.dialog-body {
+	display: flex;
+	justify-content: center; /* Centers horizontally */
+	align-items: center;     /* Centers vertically */
+	min-height: 100vh;       /* Makes the parent take full screen height */	
+}
+
 .login-body > form, .dialog-box {
-	padding: 1rem 1rem 1rem 1rem;
-	margin: 1rem 1rem 7rem 1rem;
 	border: 1px solid #817777;
+	color: black;
 	background-color: #999494;
 	border-radius: 13px;
 	text-align: center;
-	width: 21rem;
+	padding: 1rem 1rem 1rem 1rem;
+	/* 
+	margin: 1rem 1rem 7rem 1rem;
+	width: 21rem; */
 }
 
 .login-body h1, .dialog-box h1 {
 	font-size: 1.5rem;
 	font-weight: normal;
 	margin: 0 auto 1.2rem auto;	
-	color: #4A4A4A;
+}
+
+.dialog-box img {
+	width: 128px;
+}
+
+.dialog-box p {
+	overflow-wrap: break-word; 
 }
 
 .login-body input[type="text"], .login-body input[type="password"] {
@@ -191,19 +207,3 @@ main, .login-body, .error-body {
 	font-size: 17px;
 }
 
-.error-body div {
-	display: inline-block;
-}
-
-.error-body img {
-	height: 80px;
-}
-
-.error-body h1 {
-	margin: 0px 3px 6px 3px;
-	text-align: center;
-}
-
-.error-body p {
-	margin:0px 3px 6px 3px;
-}
